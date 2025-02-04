@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple AR Demo</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <!-- Tạo cảnh AR -->
+    <a-scene embedded arjs>
+      <!-- Thêm marker Hiro -->
+      <a-marker preset="hiro">
+        <!-- Thêm mô hình 3D đơn giản (hình hộp màu đỏ) -->
+        <a-box position="0 0.5 0" material="color: red;"></a-box>
+      </a-marker>
+
+      <!-- Camera để theo dõi -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
