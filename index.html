@@ -9,10 +9,10 @@
     <!-- Tạo cảnh AR -->
     <a-scene embedded arjs>
       <!-- Thêm marker Hiro -->
-      <a-marker preset="hiro">
-        <!-- Thêm mô hình 3D đơn giản (hình hộp màu đỏ) -->
-        <a-box position="0 0.5 0" material="color: red;"></a-box>
-      </a-marker>
+<a-marker type="pattern" url="https://raw.githubusercontent.com/ten_tai_khoan/repo_name/main/myMarker.patt">
+  <a-box position="0 0.5 0" material="color: blue;"></a-box>
+</a-marker>
+
 
       <!-- Camera để theo dõi -->
       <a-entity camera></a-entity>
